@@ -1,0 +1,2 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1742566456688,1924,Get Capital,200,OK,Thread Group 1-1,text,true,,3292,140,1,1,https://restcountries.com/v3.1/capital//tallinn,1919,0,966

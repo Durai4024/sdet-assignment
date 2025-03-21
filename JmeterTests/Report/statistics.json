@@ -1,0 +1,34 @@
+{
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 1,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 1924.0,
+    "medianResTime" : 1924.0,
+    "minResTime" : 1924.0,
+    "maxResTime" : 1924.0,
+    "pct1ResTime" : 1924.0,
+    "pct2ResTime" : 1924.0,
+    "pct3ResTime" : 1924.0,
+    "throughput" : 0.5197505197505198,
+    "receivedKBytesPerSec" : 1.67091670997921,
+    "sentKBytesPerSec" : 0.07105964137214138
+  },
+  "Get Capital" : {
+    "transaction" : "Get Capital",
+    "sampleCount" : 1,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 1924.0,
+    "medianResTime" : 1924.0,
+    "minResTime" : 1924.0,
+    "maxResTime" : 1924.0,
+    "pct1ResTime" : 1924.0,
+    "pct2ResTime" : 1924.0,
+    "pct3ResTime" : 1924.0,
+    "throughput" : 0.5197505197505198,
+    "receivedKBytesPerSec" : 1.67091670997921,
+    "sentKBytesPerSec" : 0.07105964137214138
+  }
+}

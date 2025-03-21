@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "b7280482-445c-492c-b539-25fbde7ec21c",
+		"name": "RestCountries",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43210254"
+	},
+	"item": [
+		{
+			"name": "Get Capital",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var jsonData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Common name is Estonia\", function () {\r",
+							"    pm.expect(jsonData[0].name.common).to.eql(\"Estonia\");\r",
+							"});\r",
+							"\r",
+							"pm.test(\"official name is Estonia\", function () {\r",
+							"    pm.expect(jsonData[0].name.official).to.eql(\"Republic of Estonia\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.com/v3.1/capital/tallinn",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"capital",
+						"tallinn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Capital with invalid capital",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});\r",
+							"\r",
+							"var jsonData = pm.response.json();\r",
+							"\r",
+							"pm.test(\"message is not found\", function () {\r",
+							"    pm.expect(jsonData.message).to.eql(\"Not Found\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restcountries.com/v3.1/capital/new york",
+					"protocol": "https",
+					"host": [
+						"restcountries",
+						"com"
+					],
+					"path": [
+						"v3.1",
+						"capital",
+						"new york"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
